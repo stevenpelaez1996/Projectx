@@ -1,0 +1,103 @@
+/* Fondo y tipografía */
+body {
+    font-family: 'Arial', sans-serif; /* Cambia esta línea para cambiar la tipografía */
+    margin: 0;
+    padding: 0;
+    background-color: hwb(89 7% 43%); /* Color verde pistacho suave */
+    color: #333; /* Color del texto */
+}
+
+/* Encabezado y logotipo */
+header {
+    background-color: hwb(96 19% 4%); /* Color verde pistacho más oscuro */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+#logo {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+/* Barra de navegación */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    background-color: #88b04b; /* Igual que el header */
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+nav ul li a:hover {
+    background-color: #6f8f3d; /* Un tono más oscuro al pasar el mouse */
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Secciones de contenido */
+h2, h3 {
+    color: #88b04b; /* Verde pistacho */
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #88b04b; /* Igual que el header */
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+/* Calendario semanal*/
+#calendario-semanal {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#calendario-semanal div {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+#calendario-semanal .header {
+    background-color: #333;
+    color: white;
+    font-weight: bold;
+}
+
+#calendario-semanal .available {
+    background-color: #90EE90; /* Verde pistacho */
+}
+
+#calendario-semanal .occupied {
+    background-color: #FF6347; /* Rojo tomate */
+}
