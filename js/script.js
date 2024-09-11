@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Rango de horas disponibles
     const horarioInicio = "09:00";
-    const horarioFin = "18:00";
+    const horarioFin = "20:00";
 
     fechaInput.addEventListener('change', () => {
         actualizarHorariosDisponibles();
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Días y horas de la semana
     const dias = ['Hora', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo'];
-    const horas = ['09:30-10:10', '10:10-10:50', '10:50-11:30', '11:30-12:10', '12:10-12:50', '12:50-13:30', '13:30-14:00', '14:00-15:00 DESCANSO', '15:00-15:40', '15:40-16:30', '16:30-17:10','17:10-17:40', '17:40-18:30','18:30-19:10'];
+    const horas = ['09:00-09:30 CARGA VILLALBA','09:30-10:10', '10:10-10:50', '10:50-11:30', '11:30-12:10', '12:10-12:50', '12:50-13:30', '13:30-14:00 CARGA MAJADAHONDA', '14:00-15:00 DESCANSO', '15:00-15:40', '15:40-16:30', '16:30-17:10','17:10-17:40', '17:40-18:30','18:30-19:10','19:10-19:50','19:50-20:00 CIERRE DEL DIA Y PREPARACION DIA SIGUIENTE'];
 
     // Generar encabezado del calendario
     dias.forEach(dia => {
